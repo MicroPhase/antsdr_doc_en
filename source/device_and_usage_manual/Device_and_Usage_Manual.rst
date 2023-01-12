@@ -2,7 +2,7 @@ Device and Usage Manual
 ===========================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Contents:
 
-   E200_Start_Guide
+   E200_Getting_Started_Guide

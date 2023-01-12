@@ -2,7 +2,7 @@ APP Notes
 ===========================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Contents:
 
-   build_driver
+   set_the_iio_firmware_ip

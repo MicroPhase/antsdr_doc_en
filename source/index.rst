@@ -7,16 +7,10 @@ Documentation of ANTSDR
 =========================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Contents:
 
    device_and_usage_manual/Device_and_Usage_Manual
    app_notes/app_notes.rst
    about
 
-Index
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
