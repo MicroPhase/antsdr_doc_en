@@ -37,7 +37,7 @@ If you want to use multiple ANTSDR-E200 devices when using plutosdr compatible f
             collisions:0 txqueuelen:1000 
             RX bytes:1065 (1.0 KiB)  TX bytes:2904 (2.8 KiB)
             Interrupt:29 Base address:0xb000 
-
+    
     lo        Link encap:Local Loopback  
             inet addr:127.0.0.1  Mask:255.0.0.0
             UP LOOPBACK RUNNING  MTU:65536  Metric:1
@@ -45,7 +45,7 @@ If you want to use multiple ANTSDR-E200 devices when using plutosdr compatible f
             TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
             collisions:0 txqueuelen:1000 
             RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
-
+    
     usb0      Link encap:Ethernet  HWaddr 00:05:F7:19:E7:93  
             inet addr:192.168.2.1  Bcast:0.0.0.0  Mask:255.255.255.0
             UP BROADCAST MULTICAST  MTU:1500  Metric:1
@@ -53,7 +53,7 @@ If you want to use multiple ANTSDR-E200 devices when using plutosdr compatible f
             TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
             collisions:0 txqueuelen:1000 
             RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
-
+    
     ```
     The mac address of the network card eth0 has been successfully modified.
 
@@ -68,7 +68,7 @@ The default ip is 192.168.1.10, if you need to modify the ip, you also need to e
 2. 
     If you want to permanently modify the ip address, you must use the **fw_setenv** command such as this.
     ```sh
-    fw_setenv ethaddr 00:0a:35:00:08:30
+    fw_setenv ipaddr_eth 192.168.2.1
     ```
 
 3. 
