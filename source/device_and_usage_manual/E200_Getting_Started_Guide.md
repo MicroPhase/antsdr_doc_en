@@ -87,6 +87,7 @@ You can `ping 192.168.1.10` to check the network connection, then you can use
 #### Download and update firmware
 You can download the latest firmware form our [antsdr-uhd github release](https://github.com/MicroPhase/antsdr_uhd).
 Unzip the released file, and copy the boot image into a sd card (the sd card need fat32 partition). And then, insert the SD card into the device. Power on the board.
+
 #### Install drivers on host
 - Install dependencies
   ```bash
@@ -101,7 +102,6 @@ Unzip the released file, and copy the boot image into a sd card (the sd card nee
   ```
   Our source code repository contains of the following branch or tags:
   master: This is the main development branch, the uhd version is 4.1.0.0 for this branch now.
-  uhd-3.15-release is for uhd 3.15-LTS.
 
 #### Install drivers on host
 ```bash
