@@ -1,5 +1,5 @@
 # How to set ip or mac address
-If you want to use multiple ANTSDR-E200 devices when using plutosdr compatible firmware, you will need this guide to set the mac and ip address.
+If you want to use multiple ANTSDR-E200 devices when using **plutosdr** compatible firmware, you will need this guide to set the mac and ip address.
 ## QSPI Flash boot mode
 ### Set mac address
 1. 
@@ -9,7 +9,7 @@ If you want to use multiple ANTSDR-E200 devices when using plutosdr compatible f
     
     username:root 
     
-    password:analog
+    password:**analog**
 
 2. 
     After enter the linux system, Set the mac address **using the command fw_setenv**, for example.
