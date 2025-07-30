@@ -1,9 +1,3 @@
-If you want to get started quickly, please see **Unpacking examination**.
-
-If you want to learn about hardware parameters, please see the **Hardware manual**. 
-
-If you want to know the RF parameters, please see **RF parameters**.
-
 
 T310 
 ===============================
