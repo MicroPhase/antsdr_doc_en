@@ -44,7 +44,11 @@ U220
    :titlesonly:
 
    ANTSDR_U220_Reference_Manual/AntsdrU220_GPIO_cn
+.. toctree::
+   :maxdepth:1
+   :titlesonly:
 
+   ANTSDR_U220_Reference_Manual/AntsdrU220_10M_PPS_GPSDO_cn
 
 U200 
 ===============================
