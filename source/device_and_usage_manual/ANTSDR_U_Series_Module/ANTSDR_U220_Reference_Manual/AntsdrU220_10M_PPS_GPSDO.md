@@ -24,7 +24,7 @@ if (std::find(sensor_names.begin(), sensor_names.end(), "ref_locked") != sensor_
         std::this_thread::sleep_for(std::chrono::seconds(1));
     }
 }
-
+```
 If you lock to external PPS, you can refer to the code below, then you need to wait patiently for the 10M/PPS indicator to be constant and see the PPS time jump
 
 ```
@@ -34,15 +34,13 @@ If you lock to external PPS, you can refer to the code below, then you need to w
         double new_pps_time = usrp->get_time_last_pps().get_real_secs();
         std::cout << "External PPS detected at time: " << new_pps_time << " seconds" << std::endl;
     }
-External PPS detected at time: 14.3577 seconds
-External PPS detected at time: 15.3577 seconds
-External PPS detected at time: 16.8904 seconds
-External PPS detected at time: 17.8904 seconds
-```
+    External PPS detected at time: 14.3577 seconds
+    External PPS detected at time: 15.3577 seconds
+    External PPS detected at time: 16.8904 seconds
+    External PPS detected at time: 17.8904 seconds
+
 ```
 
 If you use GPS, you can use the following code directly:
 
-```
-https://github.com/MicroPhase/antsdr_uhd/blob/master/host/examples/sync_to_gps.cpp
-```
+[https://github.com/MicroPhase/antsdr_uhd/blob/master/host/examples/sync_to_gps.cpp](https://github.com/MicroPhase/antsdr_uhd/blob/master/host/examples/sync_to_gps.cpp)

@@ -11,6 +11,7 @@ usrp->set_time_source("external");
 ```
 
 如果您锁定到外部10M，您可以参考下面的代码，然后您需要耐心等待直到锁上为止
+
 ```
 std::vector<std::string> sensor_names = usrp->get_mboard_sensor_names(mboard);
 if (std::find(sensor_names.begin(), sensor_names.end(), "ref_locked") != sensor_names.end() )
@@ -24,7 +25,9 @@ if (std::find(sensor_names.begin(), sensor_names.end(), "ref_locked") != sensor_
         std::this_thread::sleep_for(std::chrono::seconds(1));
     }
 }
+```
 如果您锁定到外部PPS，您可以参考下面的代码，然后您需要耐心等待10M/PPS指示灯常量，并看到PPS时间跳变
+
 ```
     const int max_wait_sec = 100;
     for (int i = 0; i < max_wait_sec; ++i) {
@@ -32,13 +35,11 @@ if (std::find(sensor_names.begin(), sensor_names.end(), "ref_locked") != sensor_
         double new_pps_time = usrp->get_time_last_pps().get_real_secs();
         std::cout << "External PPS detected at time: " << new_pps_time << " seconds" << std::endl;
     }
-External PPS detected at time: 14.3577 seconds
-External PPS detected at time: 15.3577 seconds
-External PPS detected at time: 16.8904 seconds
-External PPS detected at time: 17.8904 seconds
-```
+    External PPS detected at time: 14.3577 seconds
+    External PPS detected at time: 15.3577 seconds
+    External PPS detected at time: 16.8904 seconds
+    External PPS detected at time: 17.8904 seconds
 ```
 如果您使用GPS，您可以直接使用下面的参考代码
-```
-https://github.com/MicroPhase/antsdr_uhd/blob/master/host/examples/sync_to_gps.cpp
-```
+
+[https://github.com/MicroPhase/antsdr_uhd/blob/master/host/examples/sync_to_gps.cpp](https://github.com/MicroPhase/antsdr_uhd/blob/master/host/examples/sync_to_gps.cpp)
