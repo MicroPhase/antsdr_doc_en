@@ -2,7 +2,7 @@
 
 This repo contains the document of AntSDR, you can find the public version of schematic here.
 
-You can find [online documentation](https://antsdr-doc-en.readthedocs.io/en/latest/index.html) here.
+You can find [online documentation](https://antsdr-doc.readthedocs.io/en/latest/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E_Series_Module.html) here.
 
 Interested in firmware for AntSDR? 
 
