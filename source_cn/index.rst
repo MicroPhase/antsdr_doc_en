@@ -37,7 +37,7 @@ ANTSDR 使用指南
    :maxdepth: 1
    :caption: ANTSDR Neural
 
-   device_and_usage_manual/ANTSDR-Neural_A1/ANTSDR-Neural_A1
+   device_and_usage_manual/ANTSDR-Neural_A1/ANTSDR-Neural_A1------
 
 .. toctree::
    :maxdepth: 2

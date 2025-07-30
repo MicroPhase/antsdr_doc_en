@@ -37,7 +37,7 @@ This document contains all uses of the ANTSDR series.Please select your destinat
    :maxdepth: 1
    :caption: ANTSDR Neural
 
-   device_and_usage_manual/ANTSDR-Neural_A1/ANTSDR-Neural_A1
+   device_and_usage_manual/ANTSDR-Neural_A1/ANTSDR-Neural_A1-----
 
 .. toctree::
    :maxdepth: 2
