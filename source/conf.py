@@ -7,7 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'antsdr_doc_en'
-copyright = '2023, microphase'
+copyright = '2025, microphase'
 author = 'microphase'
 release = 'v0.1'
 
