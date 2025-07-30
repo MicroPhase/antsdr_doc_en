@@ -40,7 +40,11 @@ U220
    :titlesonly:
 
    ANTSDR_U220_Reference_Manual/AntsdrU220_gnuradio
+.. toctree::
+   :maxdepth:1
+   :titlesonly:
 
+   ANTSDR_U220_Reference_Manual/AntsdrU220_GPIO
 
 U200 
 ===============================
