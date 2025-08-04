@@ -3,22 +3,26 @@
 [[English]](../../../../device_and_usage_manual/ANTSDR_U_Series_Module/ANTSDR_U220_Reference_Manual/AntsdrU220_Unpacking_examination.html)
 
 
-### 概述
+### 1. 概述
 
 U220 是一款兼顾创客、无线电爱好者与专业用户需求的软件定义无线电（SDR）平台，覆盖 70 MHz 到 6 GHz 的宽频射频收发能力，支持多种调制与信号处理应用。丰富的开源项目支持和完善的学习文档，使用户能够快速上手并探索通信、雷达、频谱监测等多个领域的应用场景，极大地降低了SDR开发的门槛。它能够在多数场景下作为 USRP B210 的平替方案，具备双通道全双工收发能力，并支持 GPSDO 精确同步与外部时钟输入，满足多通道协同或分布式部署需求。U220 同时提供标准化驱动接口，兼容 GNU Radio、SDRangel 等主流软件平台，在保持高性能的同时，性价比更具优势，是科研、教学与工业项目理想的 SDR 平台选择。
 
 ![U220](./AntsdrU220_Reference_Manual.assets/U220.jpg)
 
-### 物品清单
+### 2. 物品清单
 
 感谢您选购微相科技有限公司的 ANTSDR 系列软件无线电产品。开箱后请核对以下配件是否齐全：
 
 - ANTSDR 软件无线电: X1
+
 - USB 数据线: X1 
+
 - 胶棒天线: X2
 
+### 3. 使用UHD固件
 
-### Windows环境安装与测试
+
+#### ● Windows环境安装与测试
 
 
 U220 能够运行 USRP UHD 的固件，在使用过程中，主要以 USRP b210 支持的软件来进行操作。首先将设备连接到电脑 USB3.0，一般来说，电脑上 USB3.0 的接口会是蓝色，具体需要看电脑的具体型号。接下来，右击菜单界面，进入设备管理器
@@ -35,7 +39,7 @@ U220 能够运行 USRP UHD 的固件，在使用过程中，主要以 USRP b210 
 
 
 
-#### UHD 驱动安装
+##### UHD 驱动安装
 
 安装完 USB 设备后，接下来需要安装 UHD 设备，在提供的 `firmware/windows` 目录下，右击以管理员身份运行安装程序。
 
@@ -65,7 +69,7 @@ U220 能够运行 USRP UHD 的固件，在使用过程中，主要以 USRP b210 
 
 ![U220](./AntsdrU220_Reference_Manual.assets/U220_probe.png)
 
-#### 软件测试
+##### 软件测试
 
 驱动完成安装后，开始测试 U220。我们使用一个开源无线电项目 `sdrAngel` 来测试。微相提供的 `windows` 文件夹下已经有了 `sdrAngel` 的安装包。
 
@@ -101,8 +105,8 @@ U220 能够运行 USRP UHD 的固件，在使用过程中，主要以 USRP b210 
 接下来就可以听见电台里的声音了。到这里，开箱检测全部完成
 
 
-### Ubuntu 
-#### 构建依赖项
+#### ● Ubuntu 
+##### 构建依赖项
 您可以通过包管理器安装所有依赖项：
 
 ```
@@ -112,7 +116,7 @@ libusb-dev python3-dev python3-mako python3-numpy python3-requests python3-scipy
 python3-ruamel.yaml
 ```
 
-#### 构建说明
+##### 构建说明
 - **使用 CMake 生成 Makefile**
 ```
 cd host/
@@ -138,12 +142,12 @@ cd /usr/local/lib/uhd/utils
 sudo ./uhd_images_downloader.py
 ```
 
-#### Replace firmware
+##### Replace firmware
 
 在微相提供的资料中有 U220的固件`usrp_b210_fpga.bin`
 替换 `usrp_b210_fpga.bin` 固件到` /usr/local/share/uhd/images/` 目录
 
-### 测试连接U220
+##### 测试连接U220
 运行命令`uhd_usrp_probe`，运行示例如下：
 
 ```
