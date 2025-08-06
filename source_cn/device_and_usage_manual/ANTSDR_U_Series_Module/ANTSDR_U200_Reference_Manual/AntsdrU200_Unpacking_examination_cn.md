@@ -61,13 +61,13 @@ ANTSDR 在能够运行 USRP UHD 的固件，在使用过程中，主要以 USRP 
 
 ![U220](../ANTSDR_U220_Reference_Manual/AntsdrU220_Reference_Manual.assets/find_u220.png)
 
-接下来运行 **uhd_usrp_probe.exe **
+接下来运行 **uhd_usrp_probe.exe**
 
 ![U220](../ANTSDR_U220_Reference_Manual/AntsdrU220_Reference_Manual.assets/U220_probe.png)
 
 ##### 软件测试
 
-驱动完成安装后，开始测试 U220。我们使用一个开源无线电项目 `sdrAngel` 来测试。微相提供的 `windows` 文件夹下已经有了 `sdrAngel` 的安装包。
+驱动完成安装后，开始测试 U200。我们使用一个开源无线电项目 `sdrAngel` 来测试。微相提供的 `windows` 文件夹下已经有了 `sdrAngel` 的安装包。
 
 ![U220](../ANTSDR_U220_Reference_Manual/AntsdrU220_Reference_Manual.assets/U220_sdrangle.png)
 
