@@ -31,7 +31,7 @@ ANTSDR 使用指南
    :maxdepth: 1
    :caption: ANTSDR T 系列
 
-   device_and_usage_manual/ANTSDR_T_Series_Module/ANTSDR_T_Series_Module
+   device_and_usage_manual/ANTSDR_T_Series_Module/ANTSDR_T_Series_Module-------
 
 .. toctree::
    :maxdepth: 1

@@ -31,7 +31,7 @@ This document contains all uses of the ANTSDR series.Please select your destinat
    :maxdepth: 1
    :caption: ANTSDR T Series
 
-   device_and_usage_manual/ANTSDR_T_Series_Module/ANTSDR_T_Series_Module
+   device_and_usage_manual/ANTSDR_T_Series_Module/ANTSDR_T_Series_Module-------
 
 .. toctree::
    :maxdepth: 1
