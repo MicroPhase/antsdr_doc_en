@@ -18,14 +18,10 @@ The U200 can serve as a practical alternative to the USRP B205 in many use cases
 Thank you for purchasing the ANTSDR series software-defined radio platform from MicroPhase Technology Co., Ltd. Upon receiving your ANTSDR U200 (Standard Edition), please open the accessory package, which should include the following items
 
 - ANTSDR Software-Defined Radio: ×1
-
 - USB Data Cable: ×1
-
 - Rubber Antennas: ×2
 
-- Tray Antenna: ×1
-
-After unpacking, the next step is to verify the SDR device model
+After unpacking, the next step is to verify the SDR device.
 
 ### 3. Using UHD Firmware
 
@@ -34,7 +30,7 @@ After unpacking, the next step is to verify the SDR device model
 The unboxing process for the U200 is similar to that of the U220.
 ANTSDR runs firmware compatible with USRP UHD, and during use, it is primarily operated through software that supports the USRP B210. First, connect the device to your computer via a USB 3.0 port—these are usually marked in blue, though this may vary depending on the computer model. Then, right-click on the Start Menu and open Device Manager.
 
-In the "Other Devices" section, you should see a device named WestBridge, indicating that the USB driver is not yet installed. Inside the provided documentation under the firmware directory, you will find a compressed file named erllc_uhd_winusb_driver. Extract it to obtain the installer package.
+In the "Other Devices" section, you should see a device named **WestBridge**, indicating that the USB driver is not yet installed. Inside the provided documentation under the `firmware` directory, you will find a compressed file named `erllc_uhd_winusb_driver`. Extract it to obtain the installer package.
 
 
 ![u220_west](../ANTSDR_U220_Reference_Manual/AntsdrU220_Reference_Manual.assets/u220_west.png)
@@ -58,21 +54,21 @@ Select the option to add UHD to the system environment variables.
 ![u220](../ANTSDR_U220_Reference_Manual/AntsdrU220_Reference_Manual.assets/U220_add_path.png)
 
 You should now see the UHD firmware in the Program Files directory on drive C.
-Copy the libusb-1.0.dll file (as shown in the image) to the UHD/bin directory.
+Copy the `libusb-1.0.dll` file (as shown in the image) to the `UHD/bin` directory.
 
 
 ![U220](../ANTSDR_U220_Reference_Manual/AntsdrU220_Reference_Manual.assets/U220uhd_bin.png)
 
-Next, go to the UHD/share directory and create a new folder named image.
-Copy the usrp_b200_fw.hex file (as shown in the image) into the image folder.
+Next, go to the `UHD/share` directory and create a new folder named image.
+Copy the `usrp_b200_fw.hex` file (as shown in the image) into the image folder.
 
 ![U220](../ANTSDR_U220_Reference_Manual/AntsdrU220_Reference_Manual.assets/U220_hex.png)
 
-Then, copy the usrp_b210_fpga.bin firmware file for the U220 into the same image folder.Edit your system environment variables to add the full path of the image folder to the system PATH.
+Then, copy the `usrp_b210_fpga.bin` firmware file for the U220 into the same image folder. Edit your system environment variables to add the full path of the image folder to the system PATH.
 
 ![U220](../ANTSDR_U220_Reference_Manual/AntsdrU220_Reference_Manual.assets/U220_path.png)
 
-In the UHD/bin directory, connect the device to a USB 3.0 port on your PC, then open a command prompt.
+In the `UHD/bin` directory, connect the device to a USB 3.0 port on your PC, then open a command prompt.
 
 ![U220](../ANTSDR_U220_Reference_Manual/AntsdrU220_Reference_Manual.assets/find_u220.png)
 
@@ -84,7 +80,7 @@ uhd_usrp_probe.exe
 
 ##### Software Test
 
-After completing the driver installation, we proceed to test the U220.
+After completing the driver installation, we proceed to test the U200.
 We use an open-source SDR application called sdrAngel for testing.
 The installation package for `sdrAngel` is already included in the windows folder provided by MicroPhase.
 
@@ -102,7 +98,7 @@ Open sdrangel
 
 ![U220](../ANTSDR_U220_Reference_Manual/AntsdrU220_Reference_Manual.assets/SDRangle_device.png)
 
-If there is no u220 device, please check whether the driver is installed successfully and whether the device is powered and restart the software.
+If there is no U200 device, please check whether the driver is installed successfully and whether the device is powered and restart the software.
 
 After successful connection, select RX2 as the receiver and select the center frequency. Here we can test the device through FM radio stations
 
