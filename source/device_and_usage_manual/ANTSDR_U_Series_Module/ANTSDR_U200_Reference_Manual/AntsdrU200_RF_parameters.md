@@ -3,6 +3,7 @@
 [[中文]](../../../cn/device_and_usage_manual/ANTSDR_U_Series_Module/ANTSDR_U200_Reference_Manual/AntsdrU200_RF_parameters_cn.html)
 
 ### U200 TX Power
+![U220](../ANTSDR_U220_Reference_Manual//AntsdrU220_Reference_Manual.assets/U200_RF.jpg)
 The AD9361 is a high performance, highly integrated radio frequency (RF) Agile Transceiver™ designed for use in 3G and 4G base station applications. Its programmability and wideband capability make it ideal for a broad range of transceiver applications. The device combines a RF front end with a flexible mixed-signal baseband section and integrated frequency synthesizers, simplifying design-in by providing a configurable digital interface to a processor. The AD9361 receiver LO operates from 70 MHz to 6.0 GHz and the transmitter LO operates from 47 MHz to 6.0 GHz range, covering most licensed and unlicensed bands. Channel bandwidths from less than 200 kHz to 56 MHz are supported.
 
 ### AD9361 Data Sheet

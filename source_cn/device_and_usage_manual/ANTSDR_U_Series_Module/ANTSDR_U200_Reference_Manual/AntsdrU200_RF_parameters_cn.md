@@ -3,7 +3,7 @@
 [[English]](../../../../device_and_usage_manual/ANTSDR_U_Series_Module/ANTSDR_U200_Reference_Manual/AntsdrU200_RF_parameters.html)
 
 ### U200 TX 功率
-![U220](../ANTSDR_U220_Reference_Manual//AntsdrU220_Reference_Manual.assets/U220_RF.jpg)
+![U220](../ANTSDR_U220_Reference_Manual//AntsdrU220_Reference_Manual.assets/U200_RF.jpg)
 
 AD9361是一款面向3G和4G基站应用的高性能、高集成度的射频 (RF) Agile Transceiver™捷变收发器。该器件的可编程性和宽带能力使其成为多种收发器应用的理想选择。该器件集RF前端与灵活的混合信号基带部分为一体，集成频率合成器，为处理器提供可配置数字接口，从而简化设计导入。AD9361接收器LO工作频率范围为70 MHz至6.0 GHz，发射器LO工作频率范围为47 MHz至6.0 GHz，涵盖大部分特许执照和免执照频段，支持的通道带宽范围为200 kHz以下至56 MHz。
 
