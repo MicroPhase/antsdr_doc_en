@@ -66,4 +66,4 @@ scp ad9361-iiostream root@192.168.1.10:~
 ```
 
 读者可以在这里找到 libiio 接口：
-[https://analogdevicesinc.github.io/libiio/master/libiio/index.html](https://analogdevicesinc.github.io/libiio/master/libiio/index.html)
+[https://analogdevicesinc.github.io/libiio/master/libiio/index.html](https://codedocs.xyz/analogdevicesinc/libiio/)

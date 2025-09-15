@@ -55,4 +55,4 @@ Log in to the board via ssh or serial port
 ```
 ./ad9361-iiostream
 ```
-You can find the libiio interface [here](https://analogdevicesinc.github.io/libiio/master/libiio/index.html).
+You can find the libiio interface [here](https://codedocs.xyz/analogdevicesinc/libiio/).
