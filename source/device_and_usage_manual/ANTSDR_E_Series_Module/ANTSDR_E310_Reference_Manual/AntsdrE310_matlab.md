@@ -84,54 +84,42 @@ Set the host computer IP to `192.168.1.100`, ensuring it is on the same subnet a
 Create a new script in MATLAB and run the following code to test the connection:
 
 ```
-clc;
 clear all;
-close all;
-amplitude = 2^12; frequency = 0.12e6;
-swv1 = dsp.SineWave(amplitude, frequency);
-swv1.ComplexOutput = true;
-swv1.SamplesPerFrame = 1e4*10;
-swv1.SampleRate = 3e6;
-y = swv1();
 
 %% Tx set up
-tx = adi.ADRV9009.Tx('uri','ip:192.168.1.10');
-tx.CenterFrequency = 1e9;
-tx.DataSource = 'DMA';
-tx.EnableCyclicBuffers = true;
-tx.AttenuationChannel0 = -10;
-tx.EnabledChannels = [1,2];
-tx([y,y]);
+tx = adi.AD9361.Tx; 
+tx.uri = 'ip:192.168.1.10';  
+tx.DataSource = 'DDS';   
+tx.DDSFrequencies = [0 0; 1e5 1e5]; 
+tx.DDSPhases = [0 0; 180e3 0]; 
+tx.DDSScales = [0 0; 1 1]; 
+tx.CenterFrequency = 2.4e9; 
+tx.RFPortSelect = 'B';
+tx();
+pause(1);       
 
 %% Rx set up
-rx = adi.ADRV9009.Rx('uri','ip:192.168.1.10');
+rx = adi.AD9361.Rx('uri','ip:192.168.1.10');
 rx.CenterFrequency = tx.CenterFrequency;
 rx.EnabledChannels = [1,2];
-rx.kernelBuffersCount = 1;
+rx.GainControlModeChannel0 = 'manual';
+rx.GainControlModeChannel1 = 'manual';
+rx.GainChannel0 = 50;
+rx.GainChannel1 = 50;
+rx.SamplingRate = 3e6;
+y = rx();   
 
-%% Run
-for k=1:10
-    valid = false;
-    while ~valid
-        [out, valid] = rx();
-    end
-end
 tx.release();
-rx.release();
+rx.release(); %释放资源
 
+%将衰减器连接在TX1上，连接一个1分2接到rx上
+out=y';
 figure(1); 
-plot(0:numel(y)-1, real(y), 'r', 0:numel(y)-1, imag(y), 'b'); 
-xlim([0 250]); 
-xlabel('sample index'); 
-grid on;
-
-out=out';
-figure(2); 
-plot(real(out(1,1:1024)));
+plot(real(out(1,1:1000)));
 hold on;
-plot(imag(out(1,1:1024)));
-figure(3) 
-plot(real(out(2,1:1024)));
+plot(imag(out(1,1:1000)));
+figure(2) 
+plot(real(out(2,1:1000)));
 hold on;
-plot(imag(out(2,1:1024)))
+plot(imag(out(2,1:1002)))
 ```
